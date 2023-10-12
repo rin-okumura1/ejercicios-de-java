@@ -1,0 +1,29 @@
+package tp1;
+
+import java.util.Scanner;
+
+public class ej1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Scanner sc=new Scanner(System.in);
+	String estado;
+	estado=sc.next().toLowerCase();
+	do {
+	switch (estado){
+	case "":
+		System.out.println("pongame algo o no sirvo");
+		break;
+	case "a":
+		System.out.println("si estas aburrido corre");
+		break;
+	case "dormitando":
+		System.out.println("anda a dormir");
+		break;
+	default:
+		System.out.println("anda a dormir2");
+	}
+	}while(!estado.equals("") && !estado.equals("a")&& !estado.equals("dormitando"));
+	
+	}
+	}

@@ -1,0 +1,47 @@
+import java.util.Scanner;
+public class ejercicio {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Scanner sc=new Scanner(System.in);
+int ford ,chevrolet ,fiat,fordc , fiatc,chevroletc,fordt,fiatt,chevrolett ,totalv,totalr;
+String marca;
+ford=600;
+fiat=200;
+chevrolet=500;
+fordc=0;
+fiatc=0;
+chevroletc=0;
+fordt=0;
+fiatt=0;
+chevrolett=0;
+do {
+	System.out.println("igrese marca a comprar");
+	marca=sc.next();
+	if (marca=="ford"){
+		System.out.println("ingrese cantidad a comprar");
+		fordc=sc.nextInt();
+		fordt=ford*fordc;
+	}
+	System.out.println("igrese marca a comprar");
+	marca=sc.next();
+	if (marca=="fiat"){
+		System.out.println("ingrese cantidad a comprar");
+		fiatc=sc.nextInt();
+		fiatt=fiat*fiatc;
+	}
+	System.out.println("igrese marca a comprar");
+	marca=sc.next();
+	if (marca=="chevrolet"){
+		System.out.println("ingrese cantidad a comprar");
+		chevroletc=sc.nextInt();
+		chevrolett=chevroletc*chevrolet;
+	}
+}while(marca=="ninguna");
+totalv=(fordc+fiatc+chevroletc);
+System.out.println("total recaudado "+totalv);
+totalr=(chevrolett+fiatt+fordt);
+System.out.println("total vendido "+totalr);
+	}
+
+}

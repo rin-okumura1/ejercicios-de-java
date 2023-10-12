@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class ej3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc= new Scanner (System.in);
+		String estado;
+		do {
+		estado=sc.next().toLowerCase();
+		System.out.println(estado);
+		switch(estado) {
+		case "":
+			System.out.println("poneme fin si queres terminar");
+		break;
+		case"a":
+			System.out.println("recibido A poneme fin si queres terminar");
+		break;
+		
+		case"b":
+			System.out.println("recibido B poneme fin si queres terminar");
+		break;
+		case"fin":
+			System.out.println("recibido fin");
+		break;
+		
+		}
+	
+		}while(!estado.equals("fin"));
+		System.out.println("fin recibido fin del programa");
+	}
+
+}
